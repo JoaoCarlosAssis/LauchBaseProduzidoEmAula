@@ -1,27 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "layout.njk" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href=" rel=" stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <title>Document</title>
-</head>
+{% block head %}
+<title>Portifolio - João Carlos</title>
 
-<body>
-  <header>
-    <div class="links">
-      <a href="index.html">Sobre</a>
-      <a href="classes.html">Aulas</a>
-    </div>
-  </header>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
 
+{% block content%}
   <div id="wrapper">
     <h1>Aulas</h1>
   </div>
+
 
   <section class="cards">
     <div class="card" id="XcU9GEUZTQA">
@@ -127,8 +116,7 @@
         </div>
       </div>
   </div>
-
+  
   <script src="scripts.js"></script>
-</body>
-
-</html>
+  
+{% endblock %}
