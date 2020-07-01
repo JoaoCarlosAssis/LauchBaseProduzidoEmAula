@@ -1,22 +1,21 @@
 {% extends "layout.njk" %}
 {% block head %}
-    <title>Sobre - João Carlos</title>
+    <title>Sobre - {{about.name}}</title>
 {% endblock%}
 
 {% block content %}
 
   <div id="wrapper">
-    <img src="https://avatars1.githubusercontent.com/u/55468179?s=460&u=4ccf1990c407407b786227ec544131009c632cd6&v=4"
-      alt="João Carlos">
-      <h1>João Carlos</h1>
-      <h2>Estudante RocketSeat</h2>
-      <p>Eprimorando minhas tecnicas de programação com a RocketSeat</p>
+    <img src="{{about.avatar_url}}" alt="imagem de {{about.name}}">
+      <h1>{{about.name}}</h1>
+      <h2>{{about.role}}</h2>
+      <p>{{about.description}}</p>
   </div>
 
   <div id="links-footer" class="links">
-    <a href="https://github.com/JoaoCarlosAssis" target="_blanck">Github</a>
-    <a href="https://www.linkedin.com/in/jo%C3%A3o-carlos-assis/" target="_blanck">Linkedin</a>
-    <a href="/">Twitter</a>
+    {%for link in about.links%}
+    <a href="{{link.url}}" target="_blanck">{{link.name}}</a>
+    {% endfor %}
   </div>
 
 {% endblock %}

@@ -3,7 +3,8 @@ module.exports = [
     id: "XcU9GEUZTQA",
     title: "Workshop Rocketseat - desenvolvendo do zero",
     duration: "57 min",
-    price: "Free"
+    price: "Free",
+    featured: true
   },
   {
     id: "rCeGfFk-uCk",
@@ -15,7 +16,8 @@ module.exports = [
     id: "92Vqk50QwF8",
     title: "Trabalhando com tecnologia no sul",
     duration: "25 min",
-    price: "Free"
+    price: "Free",
+    featured: true
   },
   {
     id: "x4FdZd2-_uU",
@@ -27,7 +29,8 @@ module.exports = [
     id: "Vw9BG9fauIE",
     title: "Cod Drops É a hora de estudar deno?",
     duration: "18 min",
-    price: "Free"
+    price: "Free",
+    featured: true
   },
   {
     id: "2iS3SHwft0k",
